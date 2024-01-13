@@ -1,2 +1,0 @@
-.NET là gì?
-.NET là 1 nền tảng phát triển mã nguồn mở, được tạo ra bởi Microsoft, để xây dựng nhiều loại ứng dụng khác nhau. Có thể làm việc với .Net qua các ngôn ngữ như C#, F# hoặc Visual Basic.
