@@ -1,0 +1,22 @@
+﻿body {
+}
+td.dangkyphong{
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+table{
+    background-color: aqua;
+    border:solid 1px;
+}
+td{
+    border:solid 1px;
+}
+
+td.dangky{
+    text-align:center;
+}
+.chu{
+    color: red;
+}

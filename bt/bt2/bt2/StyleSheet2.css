@@ -1,0 +1,15 @@
+﻿body {
+    margin:auto;
+
+}
+.submit{
+    border: solid 1px;
+    color: blue;
+}
+.canhgiua{
+    text-align: center;
+}
+.tieude{
+    background-color: blue;
+    color:white;
+}

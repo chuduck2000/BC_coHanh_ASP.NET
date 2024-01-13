@@ -1,0 +1,22 @@
+Xây dựng website quản lý sinh viên thực hiện đồ án gồm: 
+- Actor: Admin, Giáo viên, sinh viên
+	+ Admin tạo tài khoản cho Giáo viên và Sinh viên, tạo ra môn học có đồ án CSN (cơ sở ngành), CN (chuyên ngành), khóa luận TN (tốt nghiệp) (Admin chỉ quản trị, không chấm điểm)
+
+	+ Giáo viên đăng nhập vào có thể chọn các mục như: quản lý đồ án, chấm điểm,... Từng đồ án Giáo viên có thể cho phép các SV mình hướng dẫn join vào, trao đổi về đồ án (chat, trò chuyện), nộp bài,... (quản lý tiến độ)
+
+	+ Sinh viên có thể tham gia nhiều đồ án. Việc quản lý thông tin (thêm, xóa SV sẽ phụ thuộc vào giáo viên hướng dẫn)
+
+
+Giao diện (sử dụng ASP.NET tạo trang đăng nhập xác thực người dùng) quản lý gồm: 
+	Tạo, xem có bao nhiêu SV đăng ký đồ án và gồm những đồ án gì (cơ sở ngành, chuyên ngành, KLTN)
+	Ở mục "Đồ án":
+	+ Thêm đồ án (mã DA, tên DA, loại DA)
+	+ Đồ án gồm có: tên đồ án, loại đồ án, mô tả, hạn nộp, GV hướng dẫn.
+	+ Với Khóa luận TN (SV cần điểm tb hệ 4 > 2.0)
+
+Giao diện đăng nhập
+	Admin đăng nhập hệ thống bằng tài khoản "admin" (quản trị)
+	SV đăng nhập bằng tài khoản "sinh viên" (đăng ký đồ án)
+	GV đăng nhập bằng tài khoản "giáo viên" (hướng dẫn đồ án)
+
+Có mục trò chuyện tương tác SV và GV hướng dẫn (hoặc thống kê tiến độ qua đó SV liên hệ GV nếu có thắc mắc)
