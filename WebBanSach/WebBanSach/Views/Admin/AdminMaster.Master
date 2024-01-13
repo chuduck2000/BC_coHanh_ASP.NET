@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="WebBanSach.Views.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <style>
+        * {
+            font-family: Poppins;
+        }
+
+        #left {
+            color: white;
+            height: 695px;
+            background-color: teal;
+        }
+
+        label {
+            color: white;
+        }
+    </style>
+
+    <link href="../../Assets/Lib/css/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="left">
+                <div style="height: 70px">
+                </div>
+
+                <div>
+                    <div class="mb-3">
+                        <a href="#">
+                            <label>Nhân viên</label></a>
+                    </div>
+                    <div class="mb-3">
+                        <a href="../Login.aspx">
+                            <label>Đăng xuất</label></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10">
+                <form id="form1" runat="server">
+                    <div>
+                        <asp:ContentPlaceHolder ID="MyContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
