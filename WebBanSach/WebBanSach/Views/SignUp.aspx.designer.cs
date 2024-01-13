@@ -11,7 +11,7 @@ namespace WebBanSach.Views
 {
 
 
-    public partial class Login
+    public partial class SignUp
     {
 
         /// <summary>
@@ -33,6 +33,15 @@ namespace WebBanSach.Views
         protected global::System.Web.UI.WebControls.Label Thongbao;
 
         /// <summary>
+        /// Text1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Text1;
+
+        /// <summary>
         /// UnameTb control.
         /// </summary>
         /// <remarks>
@@ -51,12 +60,12 @@ namespace WebBanSach.Views
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword PasswordTb;
 
         /// <summary>
-        /// LoginBtn control.
+        /// Password1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LoginBtn;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword Password1;
     }
 }

@@ -16,11 +16,11 @@
                     <label for="" class="form-label text-success">Tên sách</label>
                     <input type="text" placeholder="Nhập tên sách: " autocomplete="off" class="form-control" />
                 </div>
-                <div class="mb-3">
+                <%--<div class="mb-3">
                     <label for="" class="form-label text-success">Tác giả</label>
-                    <%--<input type="text" placeholder="Nhập tên tác giả: " autocomplete="off" class="form-control" />--%>
+                    <input type="text" placeholder="Nhập tên tác giả: " autocomplete="off" class="form-control" />
                     <asp:DropDownList ID="ddl1" runat="server" class="form-control"></asp:DropDownList>
-                </div>
+                </div>--%>
                 <div class="mb-3">
                     <label for="" class="form-label text-success">Loại sách</label>
                     <%--<input type="text" placeholder="Nhập loại sách: " autocomplete="off" class="form-control" />--%>
@@ -36,9 +36,12 @@
                 </div>
 
                 <div class="row">
-                    <div class="col d-grid"><asp:Button Text="Thêm" runat="server" class="btn-warning btn" /></div>
-                    <div class="col d-grid"><asp:Button Text="Sửa" runat="server" class="btn-success btn" /></div>
-                    <div class="col d-grid"><asp:Button Text="Xóa" runat="server" class="btn-danger btn" /></div>
+                    <div class="col d-grid">
+                        <asp:Button Text="Thêm" runat="server" class="btn-warning btn" /></div>
+                    <div class="col d-grid">
+                        <asp:Button Text="Sửa" runat="server" class="btn-success btn" /></div>
+                    <div class="col d-grid">
+                        <asp:Button Text="Xóa" runat="server" class="btn-danger btn" /></div>
                 </div>
             </div>
             <div class="col-md-8">

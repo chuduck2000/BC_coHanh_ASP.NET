@@ -17,18 +17,19 @@
             <div class="col">
                 <form id="form1" runat="server">
                     <div style="text-align: center">
-                        <img src="../Assets/Image/bookstore.png" width="200" height="150" />
+                        <img src="../Assets/Image/Store.jpg" style="width: 200px; height: 157px;"/>
                     </div>
 
                     <h4 style="text-align: center">ĐĂNG NHẬP</h4>
+                    <asp:Label runat="server" ID="Thongbao" class="text-danger text-center "></asp:Label>
                     <div class="mt-3">
-                        <input type="text" placeholder="Tên đăng nhập" autocomplete="off" class="form-control" />
+                        <input type="text" placeholder="Tên đăng nhập" autocomplete="off" runat="server" class="form-control" id="UnameTb"/>
                     </div>
                     <div class="mt-3">
-                        <input type="password" placeholder="Password" autocomplete="off" class="form-control" />
+                        <input type="password" placeholder="Password" autocomplete="off" runat="server" class="form-control" id="PasswordTb"/>
                     </div>
                     <div class="mt-3 d-grid">
-                        <asp:Button Text="Đăng nhập" runat="server" class="btn-danger btn" />
+                        <asp:Button Text="Đăng nhập" runat="server" class="btn-danger btn" ID="LoginBtn" OnClick="LoginBtn_Click" />
                     </div>
                 </form>
             </div>

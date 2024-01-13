@@ -31,29 +31,16 @@
         <div class="row">
             <div class="col-2" id="left">
                 <div style="height: 70px">
-
                 </div>
 
                 <div>
                     <div class="mb-3">
-                        <img src="../../Assets/Image/books.png" width="20" height="20" />
-                        <a href="#">
-                            <label>Sách</label></a>
-                    </div>
-                    <div class="mb-3">
-                        <img src="../../Assets/Image/books.png" width="20" height="20" />
-                        <a href="#">
-                            <label>Tác giả</label></a>
-                    </div>
-                    <div class="mb-3">
-                        <img src="../../Assets/Image/books.png" width="20" height="20" />
                         <a href="#">
                             <label>Nhân viên</label></a>
                     </div>
                     <div class="mb-3">
-                        <img src="../../Assets/Image/books.png" width="20" height="20" />
-                        <a href="#">
-                            <label>Loại sách</label></a>
+                        <a href="../Login.aspx">
+                            <label>Đăng xuất</label></a>
                     </div>
                 </div>
             </div>
