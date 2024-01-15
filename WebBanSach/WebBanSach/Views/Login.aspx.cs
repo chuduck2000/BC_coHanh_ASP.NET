@@ -24,25 +24,39 @@ namespace WebBanSach.Views
             {
                 Thongbao.Text = "Sai thông tin đăng nhập!!!";
             }
+            //Admin
+
             else if (UnameTb.Value == "admin" && PasswordTb.Value == "123456")
             {
                 Response.Redirect("Admin/NhanVien.aspx");
             }
             else
             {
+                //NV
                 string Query = "Select * from loginNV Where tknv='{0}' and mknv='{1}'";
                 Query = string.Format(Query, UnameTb.Value, PasswordTb.Value);
-                DataTable dt = Con.GetData(Query);
-                if (dt.Rows.Count == 0)
+                DataTable dtNV = Con.GetData(Query);
+
+                //KH
+                Query = "Select * from loginKH Where tkkh='{0}' and mkkh='{1}'";
+                Query = string.Format(Query, UnameTb.Value, PasswordTb.Value);
+                DataTable dtKH = Con.GetData(Query);
+
+                if (dtNV.Rows.Count > 0)
                 {
-                    Response.Redirect("Admin/NhanVien.aspx");
+                    Uname = UnameTb.Value;
+                    User = Convert.ToInt32(dtNV.Rows[0][0].ToString());
+                    Response.Redirect("NhanVien/Sach.aspx");
+                }
+                else if (dtKH.Rows.Count > 0)
+                {
+                    Uname = UnameTb.Value;
+                    User = Convert.ToInt32(dtKH.Rows[0][0].ToString());
+                    Response.Redirect("KhachHang/Home.aspx");
                 }
                 else
                 {
-                    Uname = UnameTb.Value;
-                    User = Convert.ToInt32(dt.Rows[0][0].ToString());
-                    Response.Redirect("NhanVien/Sach.aspx");
-
+                    Thongbao.Text = "Sai thông tin đăng nhập!!!";
                 }
             }
         }

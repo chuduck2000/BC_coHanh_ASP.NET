@@ -23,19 +23,16 @@
                     <h4 style="text-align: center">ĐĂNG KÝ</h4>
                     <asp:Label runat="server" ID="Thongbao" class="text-danger text-center "></asp:Label>
                     <div class="mt-3">
-                        <input type="text" placeholder="Nhập Họ và Tên" autocomplete="off" runat="server" class="form-control" id="Text1" />
+                        <input type="text" placeholder="Nhập Họ và Tên" autocomplete="off" runat="server" class="form-control" id="tenkhTb" />
                     </div>
                     <div class="mt-3">
-                        <input type="text" placeholder="Tên đăng nhập" autocomplete="off" runat="server" class="form-control" id="UnameTb" />
+                        <input type="text" placeholder="Tên đăng nhập" autocomplete="off" runat="server" class="form-control" id="tkkhTb" />
                     </div>
                     <div class="mt-3">
-                        <input type="password" placeholder="Password" autocomplete="off" runat="server" class="form-control" id="PasswordTb" />
-                    </div>
-                    <div class="mt-3">
-                        <input type="password" placeholder="Nhập lại Password" autocomplete="off" runat="server" class="form-control" id="Password1" />
+                        <input type="password" placeholder="Password" autocomplete="off" runat="server" class="form-control" id="mkkhTb" />
                     </div>
                     <div class="mt-3 d-grid">
-                        <%--<asp:Button Text="Đăng ký" runat="server" class="btn-danger btn" ID="SignUpBtn" OnClick="SignUpBtn_Click" />--%>
+                        <asp:Button Text="Đăng ký" runat="server" class="btn-danger btn" ID="SignUpBtn" OnClick="SignUpBtn_Click" />
                     </div>
                 </form>
             </div>

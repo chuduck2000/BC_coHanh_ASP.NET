@@ -91,7 +91,9 @@
     <Content Include="Assets\Lib\js\bootstrap.js" />
     <Content Include="Assets\Lib\js\bootstrap.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="Views\Admin\KhachHang.aspx" />
     <Content Include="Views\Admin\NhanVien.aspx" />
+    <Content Include="Views\KhachHang\Home.aspx" />
     <Content Include="Views\NhanVien\Sach.aspx" />
     <Content Include="Views\Login.aspx" />
     <Content Include="Views\SignUp.aspx" />
@@ -110,12 +112,33 @@
     <Compile Include="Views\Admin\AdminMaster.Master.designer.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\KhachHang.aspx.cs">
+      <DependentUpon>KhachHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\KhachHang.aspx.designer.cs">
+      <DependentUpon>KhachHang.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\NhanVien.aspx.cs">
       <DependentUpon>NhanVien.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Admin\NhanVien.aspx.designer.cs">
       <DependentUpon>NhanVien.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\KhachHang\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\KhachHang\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\KhachHang\KhachHang.Master.cs">
+      <DependentUpon>KhachHang.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\KhachHang\KhachHang.Master.designer.cs">
+      <DependentUpon>KhachHang.Master</DependentUpon>
     </Compile>
     <Compile Include="Views\NhanVien\Sach.aspx.cs">
       <DependentUpon>Sach.aspx</DependentUpon>
@@ -172,6 +195,7 @@
     <None Include="packages.config" />
     <Content Include="Views\Admin\AdminMaster.Master" />
     <Content Include="Views\NhanVien\NhanVien.Master" />
+    <Content Include="Views\KhachHang\KhachHang.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -181,7 +205,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\KhachHang\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

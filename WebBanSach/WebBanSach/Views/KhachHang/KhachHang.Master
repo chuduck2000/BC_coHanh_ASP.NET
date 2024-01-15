@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="WebBanSach.Views.Admin.AdminMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="KhachHang.master.cs" Inherits="WebBanSach.Views.KhachHang.KhachHang" %>
 
 <!DOCTYPE html>
 
@@ -34,14 +34,7 @@
                 </div>
 
                 <div>
-                    <div class="mb-3">
-                        <a href="NhanVien.aspx">
-                            <label>Nhân viên</label></a>
-                    </div>
-                    <div class="mb-3">
-                        <a href="KhachHang.aspx">
-                            <label>Khách hàng</label></a>
-                    </div>
+                    
                     <div class="mb-3">
                         <a href="../Login.aspx">
                             <label>Đăng xuất</label></a>
